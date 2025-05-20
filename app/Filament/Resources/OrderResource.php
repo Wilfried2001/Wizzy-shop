@@ -254,7 +254,7 @@ class OrderResource extends Resource
     public static function getRelations(): array
     {
         return [
-            AddressRelationManager::class // mets en relation orderResource avec AddresRelationManager
+            AddressRelationManager::class // mets en relation orderResource avec AddressRelationManager
         ];
     }
     public static function getNavigationBadge(): ?string

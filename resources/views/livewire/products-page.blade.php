@@ -12,12 +12,11 @@
             --}}
             <div class="w-16 pb-2 mb-6 border-b border-rose-600 dark:border-gray-400"></div>
             <ul>
-
               @foreach ($categories as $category)
           <li class="mb-4" wire:key="{{$category->id}}">
           <label for="{{$category->slug}}" class="flex items-center dark:text-gray-400 ">
             <input type="checkbox" wire:model.live="selected_categories" value="{{$category->id}}" {{-- c'est l'id
-            de la categorie qui sera dans l'url apres le --}}=class="w-4 h-4 mr-2" id="{{$category->slug}}">
+            de la categorie qui sera dans l'url apres le --}}class="w-4 h-4 mr-2" id="{{$category->slug}}">
             <span class="text-lg"> {{$category->name}} </span>
           </label>
           </li>

@@ -46,7 +46,7 @@ class AddressRelationManager extends RelationManager
                 TextInput::make('zip_code')
                     ->required()
                     ->numeric()
-                    ->maxLength(255),
+                    ->maxLength(10),
 
                 Textarea::make('street_address')
                     ->required()

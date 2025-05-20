@@ -24,7 +24,7 @@ class ListOrders extends ListRecords
             OrderResource\Widgets\OrderStats::class, // cette fonction permet d'afficher le widget au niveau de order
         ];
     }
-    public function getTabs(): array // fonction qui permet d'afficher les tableaux en dessous de orderStat qui contient [All,New,Processing,Shipped,Delivered,Cancelled]
+    public function getTabs(): array // fonction qui filtre et affiche les orders selon qu'il soit [new, delivered, shipped, delivered, cancelled]
     {
         return [
             null => Tab::make('All'),

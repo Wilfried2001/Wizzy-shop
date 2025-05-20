@@ -74,7 +74,7 @@ class ProductResource extends Resource
                         ->maxFiles(5)
                         ->reorderable()
                     ])
-                ])->columnSpan(2),
+                ])->columnSpan(2 ),
 
                 Group::make()->schema([
                     Section::make('Price')->schema([
